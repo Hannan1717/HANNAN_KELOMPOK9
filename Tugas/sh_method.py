@@ -85,3 +85,80 @@ class car:
                 back1 = "n"
             else:
                 print("Input 1-4")
+                
+    def Bugatti(self, brand):
+        back1 = "y"
+        while back1 == "y":
+            print(
+                f" ======================== {brand} ======================== ")
+            print("| 1. Bugatti Divo                    - Rp 78.923.970.000  |")
+            print("| 2. Bugatti La Voiture Noire        - Rp 175.386.600.000 |")
+            print("| 3. Bugatti Centodieci              - Rp 125.693.730.000 |")
+            print(" =========================================================")
+
+            car = int(input("Pilih Mobil Yang Anda Inginkan : "))
+
+            if 1 <= car <= 3:
+                car_selected = {
+                    1: "Bugatti Divo",
+                    2: "Bugatti La Voiture Noire",
+                    3: "Bugatti Centodieci",
+                }
+                selected = "%s" % car_selected.setdefault(car)
+                print(
+                    f"Mobil Yang Anda Pilih Adalah {selected}, Silahkan Isi Formulir Registrasi : ")
+                Transaksi(selected)
+                back1 = "n"
+            else:
+                print("Input 1-3")
+
+    def Lamborghini(self, brand):
+        back1 = "y"
+        while back1 == "y":
+            print(f" ====================== {brand} ====================== ")
+            print("| 1. Lamborghini Sián FKP 37         - Rp 48.216.465.000  |")
+            print("| 2. Lamborghini Aventador SVJ       - Rp 20.000.000.000  |")
+            print("| 3. Lamborghini Aventador Lp 700-4  - Rp 8.700.000.000   |")
+            print(" =========================================================")
+
+            car = int(input("Pilih Mobil Yang Anda Inginkan : "))
+
+            if 1 <= car <= 3:
+                car_selected = {
+                    1: "Lamborghini Sián FKP 37",
+                    2: "Lamborghini Aventador SVJ",
+                    3: "Lamborghini Aventador Lp 700-4",
+                }
+                selected = "%s" % car_selected.setdefault(car)
+                print(
+                    f"Mobil Yang Anda Pilih Adalah {selected}, Silahkan Isi Formulir Registrasi : ")
+                Transaksi(selected)
+                back1 = "n"
+            else:
+                print("Input 1-3")
+
+    def Ferrari(self, brand):
+        back1 = "y"
+        while back1 == "y":
+            print(
+                f" ======================= {brand}  ======================== ")
+            print("| 1. Ferrari 488 GTB                 - Rp 12.500.000.000  |")
+            print("| 2. Ferrari LaFerrari Aperta        - Rp 129.700.000.000 |")
+            print("| 3. Ferrari LaFerrari               - Rp 22.700.000.000  |")
+            print(" =========================================================")
+
+            car = int(input("Pilih Mobil Yang Anda Inginkan : "))
+
+            if 1 <= car <= 3:
+                car_selected = {
+                    1: "Ferrari 488 GTB",
+                    2: "Ferrari LaFerrari Aperta",
+                    3: "Ferrari LaFerrari",
+                }
+                selected = "%s" % car_selected.setdefault(car)
+                print(
+                    f"Mobil Yang Anda Pilih Adalah {selected}, Silahkan Isi Formulir Registrasi : ")
+                Transaksi(selected)
+                back1 = "n"
+            else:
+                print("Input 1-3")                
